@@ -57,12 +57,6 @@ Normalizes the output values
 Sends data via serial in the format:
 a,b,c,d,e,f#
 
-Where:
-
-a–f are integer values (one per servo)
-# indicates end of message
-Waits for next user input
-
 🔧 ESP32 Firmware (Arduino Framework)
 📌 controlSerial.ino
 
@@ -84,19 +78,13 @@ Where:
 90 → neutral (center) position
 m → normalized offset value from IK
 
-👉 This means:
-
-m = 0 → servo at center position
-Positive/negative values → relative movement
-📡 Serial Communication Format
-a,b,c,d,e,f#
-
 📦 Requirements (Python)
 pip install numpy matplotlib pyserial
 
 📸 Model & References
 Images and screenshots available in /images
 3D model available on GrabCAD https://grabcad.com/library/stewart-plataform-1
+
 📝 Notes
 This repository focuses on inverse kinematics and low-level control
 Advanced control strategies (PID, LQR, BC+DeepRL) are implemented in a separate project

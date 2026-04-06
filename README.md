@@ -12,12 +12,14 @@ Visualization of simplified platform position
 Hardware Control (ESP32 + PCA9685)
 Receives servo commands via serial communication
 Controls 6 servos (MG996) using PWM driver
+
 ⚙️ Hardware Setup
 Microcontroller: ESP32
 Servo Driver: PCA9685 (I2C)
 Servos: MG996 (or similar high-torque servos)
 
 The PCA9685 allows precise PWM control of multiple servos using I2C, reducing load on the ESP32.
+![PCB desing](images/imagen_2026-04-06_090547647.png)
 
 🔌 System Architecture
 
@@ -31,6 +33,7 @@ Python (IK + Control)
 
 🧠 Inverse Kinematics (Python)
 📌 ik_visualizer.py
+![IK Simulation](images/imagen_2026-04-06_091037219.png)
 
 This script simulates the Stewart platform and visualizes its motion.
 
@@ -84,6 +87,7 @@ pip install numpy matplotlib pyserial
 📸 Model & References
 Images and screenshots available in /images
 3D model available on GrabCAD https://grabcad.com/library/stewart-plataform-1
+![3D model](images/imagen_2026-04-06_090526288.png)
 
 📝 Notes
 This repository focuses on inverse kinematics and low-level control
